@@ -16,6 +16,7 @@ export default function App() {
     // console.log(enteredGoal)
   }
   const removeGoalHandler = goalId => {
+    console.log("TO BE DELETED", goalId)
     setCourseGoals(currentGoals => {
       return currentGoals.filter((goal) => goal.id !== goalId)
     })
